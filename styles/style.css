@@ -82,6 +82,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .title {
@@ -92,7 +94,7 @@ ol {
 }
 
 .content__accent {
-  color: #545050; /*как сделать тире по центру?*/
+  color: #545050; 
 }
 
 .content__list {
@@ -233,9 +235,7 @@ fieldset {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: "";
-  position: absolute;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   width: 15px;
   height: 15px;
   background-color: #fff;
